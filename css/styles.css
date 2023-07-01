@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Common styles for all devices */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.section-title,
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title h2 {
+  font-size: 125%;
+}
+
+/* Styles for desktop view (992px and above) */
+@media (min-width: 992px) {
+  .section {
+    width: 33.33%;
+    float: left;
+    clear: none;
+    margin-right: 20px;
+  }
+
+  .section:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/* Styles for tablet view (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 50%;
+    float: left;
+    clear: none;
+    margin-right: 20px;
+  }
+
+  .section:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .section:nth-child(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Styles for mobile view (up to 767px) */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin-bottom: 20px;
+  }
+}
