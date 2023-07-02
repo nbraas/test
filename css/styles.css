@@ -8,6 +8,15 @@ body {
   padding: 0;
 }
 
+h1 {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+    margin-bottom: 30px;
+    
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,6 +26,7 @@ body {
 p {
   margin-top: 35px;
 }
+
 
 .section {
   margin-bottom: 20px;
