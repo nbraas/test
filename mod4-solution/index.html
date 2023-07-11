@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>module solution4</title>
+  <script>
+    // Array of names
+    var names = ["John", "Jane", "Jim", "jessica", "nbraas"];
+
+    // Loop over the names array
+    for (var i = 0; i < names.length; i++) {
+      var name = names[i];
+
+      // Check if the name starts with 'j' or 'J'
+      if (name.charAt(0).toLowerCase() === 'j') {
+        console.log("Goodbye " + name);
+      } else {
+        console.log("Hello " + name);
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Add any HTML content you want to display on the page -->
+  <h1>module solution4</h1>
+  <div id="output">
+    <!-- The output will be displayed here -->
+  </div>
+  
+  <script>
+    // Modify the code to display the output in the HTML page
+    var outputDiv = document.getElementById('output');
+    var output = '';
+  
+    // Loop over the names array
+    for (var i = 0; i < names.length; i++) {
+      var name = names[i];
+  
+      // Check if the name starts with 'j' or 'J'
+      if (name.charAt(0).toLowerCase() === 'j') {
+        output += "Goodbye " + name + "<br>";
+      } else {
+        output += "Hello " + name + "<br>";
+      }
+    }
+  
+    // Set the output in the HTML element
+    outputDiv.innerHTML = output;
+  </script>
+</body>
+</html>
